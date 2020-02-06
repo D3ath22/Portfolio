@@ -1,0 +1,91 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"DefaultActionPriority": 0,
+			"ActionTendencies": [
+				{
+					"Action": "Speak([cs], [ns], [m], Negative)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], Negative) = True", "[m] != Family", "DialogueState([x]) = [cs]", "Mood(Self) < -2", "SI(Player) < 30", "Has(Floor) = SELF", "Player = [x]"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "Speak([cs], [ns], [m], Positive)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], Positive) = True", "[m] != Family", "DialogueState([x]) = [cs]", "Mood(Self) > 2", "SI(Player) >= 30", "Has(Floor) = SELF", "Player = [x]"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "Speak([cs], [ns], [m], Neutral)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], Neutral) = True", "[m] != Family", "DialogueState([x]) = [cs]", "Has(Floor) = SELF", "Player = [x]"]
+						}
+				}, 
+				{
+					"Action": "Disconnect",
+					"Target": "-",
+					"Type": "-",
+					"Conditions":
+						{
+							"Set": ["DialogueState(Player) = End"]
+						}
+				},
+				{
+					"Action": "Speak(Expensive, GameTypeAnswer, Intervene2, Finish)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue(Expensive, GameTypeAnswer, Intervene2, Finish) = True", "DialogueState(Player) = Expensive", "EventId(Action-End, John, Speak([css], [nss], Intervene2, [ts]), Sarah) = [id]", "Count([id]) = 1", "Sarah = [x]", "Has(Floor) = SELF"]
+						},
+					"Priority": 4
+				}, 
+				{
+					"Action": "Speak(NeedMoreInfo1, PlatformAnswer, Intervene, Finish)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue(NeedMoreInfo1, PlatformAnswer, Intervene, Finish) = True", "DialogueState(Player) = NeedMoreInfo1", "EventId(Action-End, John, Speak([css], [nss], Intervene, [ts]), Sarah) = [id]", "Count([id]) = 1", "Sarah = [x]", "Has(Floor) = SELF"]
+						},
+					"Priority": 4
+				}, 
+				{
+					"Action": "Speak(Alternatives, FoundGame1, Intervene3, Finish)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue(Alternatives, FoundGame1, Intervene3, Finish) = True", "DialogueState(Player) = Alternatives", "EventId(Action-End, John, Speak([css], [nss], Intervene3, [ts]), Sarah) = [id]", "Count([id]) = 1", "Sarah = [x]", "Has(Floor) = SELF"]
+						},
+					"Priority": 4
+				}, 
+				{
+					"Action": "Speak(InterveneSuggest, GameType2, Intervene4, Finish)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue(InterveneSuggest, GameType2, Intervene4, Finish) = True", "DialogueState(Player) = InterveneSuggest", "EventId(Action-End, John, Speak([css], [nss], Intervene4, [ts]), Sarah) = [id]", "Count([id]) = 1", "Sarah = [x]", "Has(Floor) = SELF"]
+						},
+					"Priority": 4
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "EmotionalDecisionMaking.EmotionalDecisionMakingAsset, EmotionalDecisionMaking, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

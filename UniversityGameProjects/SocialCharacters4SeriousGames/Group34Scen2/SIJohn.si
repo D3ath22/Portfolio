@@ -1,0 +1,31 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"AttributionRules": [
+				{
+					"RuleName": "AttractedTo",
+					"Target": "[x]",
+					"Value": 20,
+					"Conditions":
+						{
+							"Set": ["IsAttracted(SELF, [x]) = True", "EventId(Action-End, Sarah, Speak([cs], [ns], [m], Positive), [y]) = [id]", "Count([id]) >= 1", "Sarah = [x]"]
+						}
+				}, 
+				{
+					"RuleName": "Family",
+					"Target": "[x]",
+					"Value": 50,
+					"Conditions":
+						{
+							"Set": ["Family([x], SELF) = True"]
+						}
+				}],
+			"Claims": []
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "SocialImportance.SocialImportanceAsset, SocialImportanceAsset, Version=1.5.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

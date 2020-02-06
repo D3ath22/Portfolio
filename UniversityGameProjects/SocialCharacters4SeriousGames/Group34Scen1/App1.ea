@@ -1,0 +1,109 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"Description": null,
+			"AppraisalRules":
+				{
+					"AppraisalWeight": 1,
+					"Rules": [
+						{
+							"EventName": "Event(Action-End, SELF, Speak(*, *, *, Negative), Player)",
+							"Conditions":
+								{
+									"Set": ["SI(Player) < 30"]
+								},
+							"Desirability": -2,
+							"Praiseworthiness": -1
+						}, 
+						{
+							"EventName": "Event(Action-End, SELF, Speak(*, *, *, Negative), Player)",
+							"Conditions":
+								{
+									"Set": ["SI(Player) >= 30"]
+								},
+							"Desirability": -5,
+							"Praiseworthiness": -2
+						}, 
+						{
+							"EventName": "Event(Action-End, SELF, Speak(*, *, *, Neutral), Player)",
+							"Conditions":
+								{
+									"Set": ["SI(Player) < 30"]
+								},
+							"Desirability": -1
+						}, 
+						{
+							"EventName": "Event(Action-End, SELF, Speak(*, *, *, Neutral), Player)",
+							"Conditions":
+								{
+									"Set": ["SI(Player) >= 30"]
+								},
+							"Desirability": -2
+						}, 
+						{
+							"EventName": "Event(Action-End, SELF, Speak(*, *, *, Positive), Player)",
+							"Conditions":
+								{
+									"Set": []
+								},
+							"Praiseworthiness": 4
+						}, 
+						{
+							"EventName": "Event(Action-End, [x], Speak(*, *, *, Negative), SELF)",
+							"Conditions":
+								{
+									"Set": ["SI(Player) >= 30", "Player = [x]"]
+								},
+							"Desirability": -1,
+							"Praiseworthiness": -2
+						}, 
+						{
+							"EventName": "Event(Action-End, [x], Speak(*, *, *, Negative), SELF)",
+							"Conditions":
+								{
+									"Set": ["SI(Player) < 30", "Player = [x]"]
+								},
+							"Desirability": -2,
+							"Praiseworthiness": -4
+						}, 
+						{
+							"EventName": "Event(Action-End, [x], Speak(*, *, *, Neutral), SELF)",
+							"Conditions":
+								{
+									"Set": ["SI(Player) >= 30", "Player = [x]"]
+								},
+							"Desirability": 2,
+							"Praiseworthiness": 1
+						}, 
+						{
+							"EventName": "Event(Action-End, [x], Speak(*, *, *, Neutral), SELF)",
+							"Conditions":
+								{
+									"Set": ["SI(Player) < 30", "Player = [x]"]
+								},
+							"Praiseworthiness": 1
+						}, 
+						{
+							"EventName": "Event(Action-End, [x], Speak(*, *, *, Positive), SELF)",
+							"Conditions":
+								{
+									"Set": ["Player = [x]"]
+								},
+							"Desirability": 8,
+							"Praiseworthiness": 5
+						}]
+				},
+			"EmotionDispositions": [
+				{
+					"Emotion": "*",
+					"Decay": 1,
+					"Threshold": 1
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "EmotionalAppraisal.EmotionalAppraisalAsset, EmotionalAppraisal, Version=1.4.1.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

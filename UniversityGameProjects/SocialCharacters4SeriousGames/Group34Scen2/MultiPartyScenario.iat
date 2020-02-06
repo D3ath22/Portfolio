@@ -1,0 +1,1031 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"ScenarioName": "MultiPartyScenario",
+			"Description": "",
+			"CharacterSources": ["Player.rpc", "John.rpc", "Sarah.rpc"],
+			"Dialogues": [
+				{
+					"CurrentState": "Opening2",
+					"NextState": "Need2",
+					"Meaning": "Closer",
+					"Style": "Negative",
+					"Utterance": "...",
+					"UtteranceId": "TTS-2F43B42FD833D1E77420A8DAE7419000"
+				}, 
+				{
+					"CurrentState": "Opening2",
+					"NextState": "Need2",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "Hey...",
+					"UtteranceId": "TTS-610B1A66B83B132CFD34E9BF7C2DB1EC"
+				}, 
+				{
+					"CurrentState": "Opening1",
+					"NextState": "Need1",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "Hello good sir, how may I be of help today?",
+					"UtteranceId": "TTS-24A94E5CD92E3A47057816F6F6059B7F"
+				}, 
+				{
+					"CurrentState": "Need1",
+					"NextState": "NeedMoreInfo1",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "Thank you. I could use some help choosing a video game for my son.",
+					"UtteranceId": "TTS-E5A03E61A3360F472B38A6AC39983AD5"
+				}, 
+				{
+					"CurrentState": "Need1",
+					"NextState": "NeedMoreInfo1",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "I'm looking to buy a video game for my son.",
+					"UtteranceId": "TTS-DB706FBF70F23CAF9B8BF0E37DFA1E6A"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "Opening2",
+					"Meaning": "Closer",
+					"Style": "Negative",
+					"Utterance": "You there, come here quick!",
+					"UtteranceId": "TTS-3607960601DCA5E5086B1C4AF3BFEC10"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "Opening1",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "Hello, can I please have your attention for a bit?",
+					"UtteranceId": "TTS-160020EBC525329063EEE8A071E9990B"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "Opening1",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "Hi",
+					"UtteranceId": "TTS-49F68A5C8493EC2C0BF489821C21FC3B"
+				}, 
+				{
+					"CurrentState": "Opening1",
+					"NextState": "Need2",
+					"Meaning": "Closer",
+					"Style": "Negative",
+					"Utterance": "Hey",
+					"UtteranceId": "TTS-6057F13C496ECF7FD777CEB9E79AE285"
+				}, 
+				{
+					"CurrentState": "Opening2",
+					"NextState": "Need1",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "Hi, is there anything you need?",
+					"UtteranceId": "TTS-556AD1313D1DD177D29827FC800414FE"
+				}, 
+				{
+					"CurrentState": "GiveUp1",
+					"NextState": "ConfirmFailure",
+					"Meaning": "-",
+					"Style": "Neutral",
+					"Utterance": "This is too hard.",
+					"UtteranceId": "TTS-91CDA779215F79C9480F3679827C1124"
+				}, 
+				{
+					"CurrentState": "Need2",
+					"NextState": "NeedMoreInfo1",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "I want to buy a video game for my son.",
+					"UtteranceId": "TTS-6ACD7C3347D08DDE1F52440200C31FEB"
+				}, 
+				{
+					"CurrentState": "Age",
+					"NextState": "GameTypeAnswer",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "Is he a teenager? Perhaps he is into action RPG's.",
+					"UtteranceId": "TTS-B9BECC3FC2DED6619593A8514CE48EFF"
+				}, 
+				{
+					"CurrentState": "Need2",
+					"NextState": "NeedMoreInfo2",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "I want the best video game you have here.",
+					"UtteranceId": "TTS-57F84FA5742037140C28D8732A7F2558"
+				}, 
+				{
+					"CurrentState": "Need2",
+					"NextState": "QuickGetAway1",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "The best video game you have here, now.",
+					"UtteranceId": "TTS-553779F8427E70AF59DDEBF569913143"
+				}, 
+				{
+					"CurrentState": "PlatformAnswer",
+					"NextState": "Expensive",
+					"Meaning": "Closer",
+					"Style": "Negative",
+					"Utterance": "I don't know.",
+					"UtteranceId": "TTS-45C6433A99F9CF4C21AF5AB2C1E6D605"
+				}, 
+				{
+					"CurrentState": "NeedMoreInfo1",
+					"NextState": "PlatformAnswer",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "Ok, for which platform do you want the game?",
+					"UtteranceId": "TTS-EFA30E362F9198F5C3CAE80179D9F232"
+				}, 
+				{
+					"CurrentState": "NeedMoreInfo2",
+					"NextState": "PlatformAnswer",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "Is it for your son? In which platform does he play on?",
+					"UtteranceId": "TTS-814007A60DBB446DF072EE4D90F58665"
+				}, 
+				{
+					"CurrentState": "NeedMoreInfo2",
+					"NextState": "GiveUp1",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "There is no such thing as best video game.",
+					"UtteranceId": "TTS-9DA99EF9A205C16F1822484D66C156CD"
+				}, 
+				{
+					"CurrentState": "QuickGetAway1",
+					"NextState": "GiveUp1",
+					"Meaning": "-",
+					"Style": "Positive",
+					"Utterance": "Let me get the manager for you sir.",
+					"UtteranceId": "TTS-01502F429EFFDCE78F9A7DC7C42F87B8"
+				}, 
+				{
+					"CurrentState": "GiveUp1",
+					"NextState": "ConfirmFailure",
+					"Meaning": "-",
+					"Style": "Positive",
+					"Utterance": "This is taking too long.",
+					"UtteranceId": "TTS-127D6DEAB7008119D7061B5B158E973A"
+				}, 
+				{
+					"CurrentState": "ConfirmSuccess",
+					"NextState": "End",
+					"Meaning": "-",
+					"Style": "Positive",
+					"Utterance": "Awsome! Thank you for your purchase, have a good day!",
+					"UtteranceId": "TTS-B1BBBD9AB02395A78ABD02D6B5EA0A6B"
+				}, 
+				{
+					"CurrentState": "GameType1",
+					"NextState": "GameTypeAnswer",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "Does he like action RPG's?",
+					"UtteranceId": "TTS-D3470120AD1B4663807B8A2EA9E0A29E"
+				}, 
+				{
+					"CurrentState": "QuickGetAway1",
+					"NextState": "End",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "Security, please come here.",
+					"UtteranceId": "TTS-1177070D2E31B4EB7677BFBC62507E96"
+				}, 
+				{
+					"CurrentState": "NeedMoreInfo1",
+					"NextState": "PlatformAnswer",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "Does your son favour a specific platform? Oh and how old is he?",
+					"UtteranceId": "TTS-BE360A6F6FED6DB8572A69B7BC00B2F0"
+				}, 
+				{
+					"CurrentState": "PlatformAnswer",
+					"NextState": "Age",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "He plays on PC.",
+					"UtteranceId": "TTS-CBF508324381E1DEBF105C21CFDB65F4"
+				}, 
+				{
+					"CurrentState": "PlatformAnswer",
+					"NextState": "GameType1",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "He plays mostly on PC, oh and he is 17 years old.",
+					"UtteranceId": "TTS-7248635B62C2E4F88068B96C5ECD80C2"
+				}, 
+				{
+					"CurrentState": "WhoAnswer",
+					"NextState": "NeedMoreInfo1",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "It's for my son.",
+					"UtteranceId": "TTS-4428BDE5A898E6EBF1C8B6ADC4AD1E82"
+				}, 
+				{
+					"CurrentState": "End",
+					"NextState": "-",
+					"Meaning": "-",
+					"Style": "Neutral",
+					"Utterance": "End",
+					"UtteranceId": "TTS-7F021A1415B86F2D013B2618FB31AE53"
+				}, 
+				{
+					"CurrentState": "Unsure",
+					"NextState": "FoundGame",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "I'm not sure, I may have heard him talk about a Witcher",
+					"UtteranceId": "TTS-EA59DB4E430345CD43C412AD168DBCA7"
+				}, 
+				{
+					"CurrentState": "WhoAnswer",
+					"NextState": "Expensive",
+					"Meaning": "Closer",
+					"Style": "Negative",
+					"Utterance": "My son. Can we hurry this up?",
+					"UtteranceId": "TTS-BE57506A0B8C6AFBFA698C84B27ACD67"
+				}, 
+				{
+					"CurrentState": "FoundGame",
+					"NextState": "FoundGame1",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "The Witcher 3 is one of our most popular options, however it's 18+.",
+					"UtteranceId": "TTS-92FBEB84C0DC08D57D964690BE9F4B45"
+				}, 
+				{
+					"CurrentState": "Age",
+					"NextState": "AgeAnswer",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "How old is your son?",
+					"UtteranceId": "TTS-A25A1DA26F7CF13151917224660DFC90"
+				}, 
+				{
+					"CurrentState": "AgeAnswer",
+					"NextState": "Expensive",
+					"Meaning": "Closer",
+					"Style": "Negative",
+					"Utterance": "Old enough. I don't have time for this.",
+					"UtteranceId": "TTS-F94F833C5D5C6D59F4952AB8B653D366"
+				}, 
+				{
+					"CurrentState": "Expensive",
+					"NextState": "GameTypeChoice",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "With just this information it will be expensive, at least what type of game do you want?",
+					"UtteranceId": "TTS-4F0DA688BF67F18D542937C8EB2E9945"
+				}, 
+				{
+					"CurrentState": "AgeAnswer",
+					"NextState": "GameType1",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "My son is 17 years old.",
+					"UtteranceId": "TTS-86F45760BF71C8F7CE7E3373CCB3219F"
+				}, 
+				{
+					"CurrentState": "GameTypeAnswer",
+					"NextState": "Alternatives",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "No, I'm looking for something else.",
+					"UtteranceId": "TTS-E37B5D78F25F7FB7E2568DD1D0A67691"
+				}, 
+				{
+					"CurrentState": "GameSuggestion",
+					"NextState": "FoundGame2",
+					"Meaning": "-",
+					"Style": "Neutral",
+					"Utterance": "What about Dark Souls 3? It's one of the best we have but it may be a bit hard.",
+					"UtteranceId": "TTS-0A7BCF48963857D73A0610DED7149F76"
+				}, 
+				{
+					"CurrentState": "Unlucky",
+					"NextState": "ConfirmSuccess",
+					"Meaning": "-",
+					"Style": "Neutral",
+					"Utterance": "Ok, l'll buy it.",
+					"UtteranceId": "TTS-A321D8842DB22752D4FAE6B6151614E5"
+				}, 
+				{
+					"CurrentState": "WhoAnswer",
+					"NextState": "GameType1",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "It's for my 17 years old son, he loves playing on the PC.",
+					"UtteranceId": "TTS-FD89F171F0E2EB38824BF24C29BA24DC"
+				}, 
+				{
+					"CurrentState": "FoundGame1",
+					"NextState": "ConfirmSuccess",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "Yes, I'll take that.",
+					"UtteranceId": "TTS-1D2177D4B5373C89D1496DF2151161EC"
+				}, 
+				{
+					"CurrentState": "QuickGetAway1",
+					"NextState": "End",
+					"Meaning": "-",
+					"Style": "Neutral",
+					"Utterance": "Sorry sir, I can't help you right now.",
+					"UtteranceId": "TTS-C36EEB3A44DC6EC6974BED051521053A"
+				}, 
+				{
+					"CurrentState": "FoundGame1",
+					"NextState": "ConfirmSuccess",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "Yes, I remember he mentioning he wanted this game! Thank you!",
+					"UtteranceId": "TTS-CA9EB02ACD36BFF344B8A58B5051F0E7"
+				}, 
+				{
+					"CurrentState": "Alternatives",
+					"NextState": "FoundGame1",
+					"Meaning": "Intervene3",
+					"Style": "Negative",
+					"Utterance": "What about this The Sims series pack?",
+					"UtteranceId": "TTS-BB1D02A81F43829301934F3D2B00581C"
+				}, 
+				{
+					"CurrentState": "Alternatives",
+					"NextState": "GameType2",
+					"Meaning": "-",
+					"Style": "Positive",
+					"Utterance": "Ok then, what about this adventure RPG, Divinity: Original Sin II ?",
+					"UtteranceId": "TTS-1BFFBA24CA0F8FDD4F09881011BCD1C9"
+				}, 
+				{
+					"CurrentState": "Alternatives",
+					"NextState": "GameType2",
+					"Meaning": "-",
+					"Style": "Neutral",
+					"Utterance": "What about a car game, like Gran Turismo 7?",
+					"UtteranceId": "TTS-7ED0A429734982545C131F460A07C3D8"
+				}, 
+				{
+					"CurrentState": "GameType2",
+					"NextState": "ConfirmSuccess",
+					"Meaning": "-",
+					"Style": "Positive",
+					"Utterance": "Seems good.",
+					"UtteranceId": "TTS-0645D54B5A19A60CEF1830D6180AA361"
+				}, 
+				{
+					"CurrentState": "GameType2",
+					"NextState": "ConfirmFailure",
+					"Meaning": "-",
+					"Style": "Neutral",
+					"Utterance": "No, I'm going to get him something else.",
+					"UtteranceId": "TTS-C14D6B22E60ECF1EE2D9EC90334EC962"
+				}, 
+				{
+					"CurrentState": "GameType2",
+					"NextState": "QuickGetAway1",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "Listen to me lady, I'm getting real impatient here!",
+					"UtteranceId": "TTS-16415E9243F276861FF6BF68D957AD20"
+				}, 
+				{
+					"CurrentState": "Need1",
+					"NextState": "QuickGetAway1",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "Give me your best video game.",
+					"UtteranceId": "TTS-6450A43D268FEF04B153BA39C687FEF5"
+				}, 
+				{
+					"CurrentState": "ConfirmSuccess",
+					"NextState": "End",
+					"Meaning": "-",
+					"Style": "Neutral",
+					"Utterance": "Thank you and come again.",
+					"UtteranceId": "TTS-0029F10DD60565FB80A1D162B15F82E2"
+				}, 
+				{
+					"CurrentState": "Unsure",
+					"NextState": "GameSuggestion",
+					"Meaning": "Closer",
+					"Style": "Negative",
+					"Utterance": "Just suggest me something.",
+					"UtteranceId": "TTS-A0C539E02F04A023C4E09967336C086D"
+				}, 
+				{
+					"CurrentState": "Unsure",
+					"NextState": "Alternatives",
+					"Meaning": "-",
+					"Style": "Neutral",
+					"Utterance": "I really don't know.",
+					"UtteranceId": "TTS-3AA6116DADAAEAEF59CE55C714C66E3F"
+				}, 
+				{
+					"CurrentState": "GiveUp1",
+					"NextState": "ConfirmFailure",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "I'm done here!",
+					"UtteranceId": "TTS-9D86AC16CC918ACA88BD5DE064200AF0"
+				}, 
+				{
+					"CurrentState": "Opening1",
+					"NextState": "Need1",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "Hi, how can I help you?",
+					"UtteranceId": "TTS-4ADD47E4402565D3AE1C04DCC180A40A"
+				}, 
+				{
+					"CurrentState": "NeedMoreInfo2",
+					"NextState": "WhoAnswer",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "Who is this video game for ?",
+					"UtteranceId": "TTS-288A4357906BC68A6D265C154F8A5879"
+				}, 
+				{
+					"CurrentState": "Age",
+					"NextState": "GiveUp1",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "I can't help you if you don't even tell me is age.",
+					"UtteranceId": "TTS-7214419DD276B3A07EEC7B91E505C626"
+				}, 
+				{
+					"CurrentState": "AgeAnswer",
+					"NextState": "GameSuggestion",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "My son is 17,  he really likes action RPG's.",
+					"UtteranceId": "TTS-F8E2717D851D3C119B37C43C00E7FC37"
+				}, 
+				{
+					"CurrentState": "GameType1",
+					"NextState": "Unsure",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "Does he like multiplayer games?",
+					"UtteranceId": "TTS-DF4AFA629C0F50C93C37E40744257D6C"
+				}, 
+				{
+					"CurrentState": "GameTypeAnswer",
+					"NextState": "GameSuggestion",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "Yes, I think so.",
+					"UtteranceId": "TTS-484DB5F0455505D8486A0B25FE882B68"
+				}, 
+				{
+					"CurrentState": "ConfirmFailure",
+					"NextState": "End",
+					"Meaning": "-",
+					"Style": "Positive",
+					"Utterance": "Oh, thats a shame, have a good day sir!",
+					"UtteranceId": "TTS-E17E4FA453D79E62ACAF6873F65F7BE0"
+				}, 
+				{
+					"CurrentState": "GameType1",
+					"NextState": "Unlucky",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "Maybe he would enjoy a game full of microtransactions.",
+					"UtteranceId": "TTS-A37B29403645722A5515EC02F28A9172"
+				}, 
+				{
+					"CurrentState": "FoundGame2",
+					"NextState": "Alternatives",
+					"Meaning": "-",
+					"Style": "Neutral",
+					"Utterance": "I don't want to give him a really hard game.",
+					"UtteranceId": "TTS-714949921D63289B919BA93A25F8A78D"
+				}, 
+				{
+					"CurrentState": "GameSuggestion",
+					"NextState": "FoundGame1",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "One of the most popular options we have is The Witcher 3? The whole package is definetly worth more than the price.",
+					"UtteranceId": "TTS-70A48F102F61CA2F6D7C5BE8F3859EB5"
+				}, 
+				{
+					"CurrentState": "GameSuggestion",
+					"NextState": "Unlucky",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "What about League of Legends?",
+					"UtteranceId": "TTS-FFF7020DAEFEDFC5BA3BE06A4B7F9142"
+				}, 
+				{
+					"CurrentState": "FoundGame2",
+					"NextState": "ConfirmSuccess",
+					"Meaning": "-",
+					"Style": "Positive",
+					"Utterance": "This looks like a good choice. It may help him to not give up on things.",
+					"UtteranceId": "TTS-E558A7D04A9FABBECFE3DEAC217CEED6"
+				}, 
+				{
+					"CurrentState": "FoundGame2",
+					"NextState": "ConfirmFailure",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "I don't want any of this.",
+					"UtteranceId": "TTS-BA5921492A23AD44D8CFF8BFDCFE5F68"
+				}, 
+				{
+					"CurrentState": "Unlucky",
+					"NextState": "ConfirmSuccess",
+					"Meaning": "-",
+					"Style": "Positive",
+					"Utterance": "Ok, I'll buy it.",
+					"UtteranceId": "TTS-AB73533D15B601F9E0D16ADF079EC863"
+				}, 
+				{
+					"CurrentState": "Unlucky",
+					"NextState": "ConfirmFailure",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "This is not what I'm looking for.",
+					"UtteranceId": "TTS-04DA2E1BCE972151BA9413E60240D466"
+				}, 
+				{
+					"CurrentState": "FoundGame",
+					"NextState": "FoundGame1",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "The Witcher 1 is it?",
+					"UtteranceId": "TTS-33FB11738653FE80776BE20B8A1CB4CD"
+				}, 
+				{
+					"CurrentState": "GameTypeAnswer",
+					"NextState": "FoundGame",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "Yes! And I think he mentioned some Witcher.",
+					"UtteranceId": "TTS-205CE6C62FC8F4F57C9CCE20174BBFFA"
+				}, 
+				{
+					"CurrentState": "GameTypeChoice",
+					"NextState": "GameType1",
+					"Meaning": "Closer",
+					"Style": "Neutral",
+					"Utterance": "I don't know, what do you suggest?",
+					"UtteranceId": "TTS-A763F6807D5CC61208FD86874F1F0DB1"
+				}, 
+				{
+					"CurrentState": "GameTypeChoice",
+					"NextState": "GameSuggestion",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "Sorry, I don't know anything about this stuff. Can you suggest me a game?",
+					"UtteranceId": "TTS-5277E6FE43A14094C99DCF86DAC1A820"
+				}, 
+				{
+					"CurrentState": "GameTypeChoice",
+					"NextState": "Alternatives",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "I don't know!",
+					"UtteranceId": "TTS-BB334158D2218E458B83324A57100EFC"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "OpeningF",
+					"Meaning": "Family",
+					"Style": "Positive",
+					"Utterance": "Hey son, come here please.",
+					"UtteranceId": "TTS-7057D14B55237245B17647AC7DA28863"
+				}, 
+				{
+					"CurrentState": "ConfirmF",
+					"NextState": "ConfirmConF",
+					"Meaning": "Family",
+					"Style": "Negative",
+					"Utterance": "I got you The Sims Special Pack. How happy are you?",
+					"UtteranceId": "TTS-B5D2D7EC28FBBE9E2EB90DE6040BE0AD"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "OpeningF",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "Son, come here.",
+					"UtteranceId": "TTS-C804D4B6CEE5417700B0AC4489F6D8F5"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "OpeningF",
+					"Meaning": "Family",
+					"Style": "Negative",
+					"Utterance": "Come here, now.",
+					"UtteranceId": "TTS-128BAF39A8CDA0811F30BF5586EE89E7"
+				}, 
+				{
+					"CurrentState": "OpeningF",
+					"NextState": "NeedF",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "I'm here.",
+					"UtteranceId": "TTS-A8F62A639918C178C9B189FF1B8633E0"
+				}, 
+				{
+					"CurrentState": "OpeningF",
+					"NextState": "NeedF",
+					"Meaning": "Family",
+					"Style": "Positive",
+					"Utterance": "Yes, I'm right here dad.",
+					"UtteranceId": "TTS-39939BBA5053B4311476707DC7BD67E9"
+				}, 
+				{
+					"CurrentState": "OpeningF",
+					"NextState": "NeedF",
+					"Meaning": "Family",
+					"Style": "Negative",
+					"Utterance": "...",
+					"UtteranceId": "TTS-2F43B42FD833D1E77420A8DAE7419000"
+				}, 
+				{
+					"CurrentState": "NeedF",
+					"NextState": "NeedConF",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "You want a video game, yes?",
+					"UtteranceId": "TTS-1C66BC0784FA1339AA50FB02346B7618"
+				}, 
+				{
+					"CurrentState": "NeedF",
+					"NextState": "NeedConF",
+					"Meaning": "Family",
+					"Style": "Positive",
+					"Utterance": "It's your lucky day, I'm buying you a video game.",
+					"UtteranceId": "TTS-ADFC07730A2719A7C5648046630F2C30"
+				}, 
+				{
+					"CurrentState": "NeedF",
+					"NextState": "NeedConF",
+					"Meaning": "Family",
+					"Style": "Negative",
+					"Utterance": "I'm telling the lady I'll give you a game, but its for ME!",
+					"UtteranceId": "TTS-5C4F2039E1635D09F7B94E2F45CC5D6E"
+				}, 
+				{
+					"CurrentState": "PlatformF",
+					"NextState": "PlatformConF",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "The lady is asking what platform do you want the game for.",
+					"UtteranceId": "TTS-7A17C5317A96468F65E6E18399349E77"
+				}, 
+				{
+					"CurrentState": "NeedConF",
+					"NextState": "PlatformF",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "Yay",
+					"UtteranceId": "TTS-402ACB1C3E3F37DA6E1BB6CACADC315D"
+				}, 
+				{
+					"CurrentState": "NeedConF",
+					"NextState": "PlatformF",
+					"Meaning": "Family",
+					"Style": "Negative",
+					"Utterance": "daaaad...",
+					"UtteranceId": "TTS-92AD3F3D0E352BA2869AD2A8D744F1C9"
+				}, 
+				{
+					"CurrentState": "NeedConF",
+					"NextState": "PlatformF",
+					"Meaning": "Family",
+					"Style": "Positive",
+					"Utterance": "Yay, thanks dad.",
+					"UtteranceId": "TTS-FC9475500DAA45330401D5D5E16F12F4"
+				}, 
+				{
+					"CurrentState": "PlatformF",
+					"NextState": "PlatformConF",
+					"Meaning": "Family",
+					"Style": "Positive",
+					"Utterance": "Master Race, right?",
+					"UtteranceId": "TTS-F0890C185A6FCBDE8957AF6A069504D2"
+				}, 
+				{
+					"CurrentState": "PlatformF",
+					"NextState": "AgeConF",
+					"Meaning": "Family",
+					"Style": "Negative",
+					"Utterance": "Huh, how old are you again?",
+					"UtteranceId": "TTS-FB69F19E08F59A13ED3B95F31AD44A6E"
+				}, 
+				{
+					"CurrentState": "AgeConF",
+					"NextState": "PlatformF",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "Daad... I'm 17.",
+					"UtteranceId": "TTS-0EA58D460144202D60B2C0B83489CCF9"
+				}, 
+				{
+					"CurrentState": "PlatformConF",
+					"NextState": "GameTypeF",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "It's for PC, dad.",
+					"UtteranceId": "TTS-3D171538EC02915264936398D4295A99"
+				}, 
+				{
+					"CurrentState": "PlatformConF",
+					"NextState": "GameTypeF",
+					"Meaning": "Family",
+					"Style": "Positive",
+					"Utterance": "Let's go! Master Race!",
+					"UtteranceId": "TTS-2C1BE539C1F0156ACB1103CC71D9282E"
+				}, 
+				{
+					"CurrentState": "PlatformConF",
+					"NextState": "GameTypeF",
+					"Meaning": "Family",
+					"Style": "Negative",
+					"Utterance": "Do you see me playing on a Switch? I thought so.",
+					"UtteranceId": "TTS-95B70513001C4C44B0B75D4D77329BFD"
+				}, 
+				{
+					"CurrentState": "GameTypeF",
+					"NextState": "GameTypeConF",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "The lady is asking what game genre you prefer.",
+					"UtteranceId": "TTS-1A225DA804249064D09567A95BFCC203"
+				}, 
+				{
+					"CurrentState": "GameTypeF",
+					"NextState": "GameTypeConF",
+					"Meaning": "Family",
+					"Style": "Positive",
+					"Utterance": "Action RPG it is, ye?",
+					"UtteranceId": "TTS-6675FBD575BB5824F3AB4E2B8D88EE45"
+				}, 
+				{
+					"CurrentState": "GameTypeConF",
+					"NextState": "GameSuggestF",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "I want an Action RPG dad.",
+					"UtteranceId": "TTS-C94CDCE3F8850F10F87346F17A4D1562"
+				}, 
+				{
+					"CurrentState": "GameTypeConF",
+					"NextState": "GameSuggestF",
+					"Meaning": "Family",
+					"Style": "Positive",
+					"Utterance": "I want an Action RPG, The WItcher 3, it even rimes! kinda.",
+					"UtteranceId": "TTS-7CECC9510D487A5B837C119C007E7E94"
+				}, 
+				{
+					"CurrentState": "GameTypeConF",
+					"NextState": "GameSuggestF",
+					"Meaning": "Family",
+					"Style": "Negative",
+					"Utterance": "I want a game full of microtransactions obviously! And ponies.",
+					"UtteranceId": "TTS-F6ECCB7CA68580B4FD3176E363989EC5"
+				}, 
+				{
+					"CurrentState": "GameSuggestF",
+					"NextState": "GameSuggestConF",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "Do you want Dark Souls 3? Or is it too hard for you?",
+					"UtteranceId": "TTS-D2D8056BEACCD64523288DFF40C3ED08"
+				}, 
+				{
+					"CurrentState": "GameSuggestConF",
+					"NextState": "ConfirmF",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "I want The WItcher 3 dad.",
+					"UtteranceId": "TTS-89485F2F54E0A3CF835EF7334E770AA5"
+				}, 
+				{
+					"CurrentState": "GameSuggestF",
+					"NextState": "GameSuggestConF",
+					"Meaning": "Family",
+					"Style": "Positive",
+					"Utterance": "You want The WItcher 3 don't you boy? *Its for me, hehe, I can't wait to play it...*",
+					"UtteranceId": "TTS-F57DB65AB8D4F75AA71666516A5694A8"
+				}, 
+				{
+					"CurrentState": "GameSuggestConF",
+					"NextState": "ConfirmF",
+					"Meaning": "Family",
+					"Style": "Positive",
+					"Utterance": "Are you familiar with Triss and Yen dad? I will let you meet them. *Witcher 3 dad*",
+					"UtteranceId": "TTS-DC4E35530B4A7A6BC04E659BFEC1459B"
+				}, 
+				{
+					"CurrentState": "GameSuggestF",
+					"NextState": "GameSuggestConF",
+					"Meaning": "Family",
+					"Style": "Negative",
+					"Utterance": "Looks like you are getting a League of Legends RP card! Yay",
+					"UtteranceId": "TTS-AC5787102C1405C1827CD75D6B42174F"
+				}, 
+				{
+					"CurrentState": "GameSuggestConF",
+					"NextState": "ConfirmF",
+					"Meaning": "Family",
+					"Style": "Negative",
+					"Utterance": "I don't know dad, What game have I been begging for since I came to Earth?",
+					"UtteranceId": "TTS-E97847B3BC520BE24D5C657C1E7DD701"
+				}, 
+				{
+					"CurrentState": "ConfirmF",
+					"NextState": "ConfirmConF",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "I got you The Witcher 3, son.",
+					"UtteranceId": "TTS-533730808809BA6708EF47A773D09BCF"
+				}, 
+				{
+					"CurrentState": "ConfirmF",
+					"NextState": "ConfirmConF",
+					"Meaning": "Family",
+					"Style": "Positive",
+					"Utterance": "Oh man, I can't wait to meet Yen... don't tell mom.",
+					"UtteranceId": "TTS-48F31953D2AF6C62F4D207A8B14E5082"
+				}, 
+				{
+					"CurrentState": "ConfirmConF",
+					"NextState": "End",
+					"Meaning": "Family",
+					"Style": "Neutral",
+					"Utterance": "Thanks dad.",
+					"UtteranceId": "TTS-C5D80962A041077C3D601AE4F0A80453"
+				}, 
+				{
+					"CurrentState": "ConfirmConF",
+					"NextState": "End",
+					"Meaning": "Family",
+					"Style": "Negative",
+					"Utterance": "Thanks so much... The trade coupon please.",
+					"UtteranceId": "TTS-E3B91F44C354EB82AB1C824F9A44144E"
+				}, 
+				{
+					"CurrentState": "ConfirmConF",
+					"NextState": "End",
+					"Meaning": "Family",
+					"Style": "Positive",
+					"Utterance": "I'm going with the Triss storyline so... Replayability dad!",
+					"UtteranceId": "TTS-072F9FBB8B4EC205DB1B9B11B490F9B6"
+				}, 
+				{
+					"CurrentState": "Expensive",
+					"NextState": "GameTypeAnswer",
+					"Meaning": "Intervene2",
+					"Style": "Negative",
+					"Utterance": "Why don't you buy this Nintendo Switch with 2 popular games a 2 controllers?",
+					"UtteranceId": "TTS-62220CB052B73F3AE7C32AF7638DD258"
+				}, 
+				{
+					"CurrentState": "ConfirmFailure",
+					"NextState": "End",
+					"Meaning": "-",
+					"Style": "Neutral",
+					"Utterance": "Bye",
+					"UtteranceId": "TTS-BFA99DF33B137BC8FB5F5407D7E58DA8"
+				}, 
+				{
+					"CurrentState": "ConfirmFailure",
+					"NextState": "End",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "Oh, thats a shame, have a good day sir!",
+					"UtteranceId": "TTS-E17E4FA453D79E62ACAF6873F65F7BE0"
+				}, 
+				{
+					"CurrentState": "ConfirmSuccess",
+					"NextState": "End",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "Come again...",
+					"UtteranceId": "TTS-D4045F15EA5A01D43907A1067FE90EDE"
+				}, 
+				{
+					"CurrentState": "Alternatives",
+					"NextState": "FoundGame1",
+					"Meaning": "Intervene3",
+					"Style": "Finish",
+					"Utterance": "Ok, what about The Witcher 3?",
+					"UtteranceId": "TTS-3FD16D218B82DC2989C018B8CD8D5FE9"
+				}, 
+				{
+					"CurrentState": "-",
+					"NextState": "-",
+					"Meaning": "Intervene3",
+					"Style": "John",
+					"Utterance": "Ewwww, I want an Action RPG lady.",
+					"UtteranceId": "TTS-3AF5C1F6D81BA8C42309C8F45F010F70"
+				}, 
+				{
+					"CurrentState": "FoundGame",
+					"NextState": "FoundGame1",
+					"Meaning": "Closer",
+					"Style": "Positive",
+					"Utterance": "That should be The Witcher 3! It's one of our best and most popular options.",
+					"UtteranceId": "TTS-DECFAF037097B0D69B5FCA4C51D1A8E8"
+				}, 
+				{
+					"CurrentState": "NeedMoreInfo1",
+					"NextState": "PlatformAnswer",
+					"Meaning": "Intervene",
+					"Style": "Finish",
+					"Utterance": "Ok, what is the platform?",
+					"UtteranceId": "TTS-5D7D448EF3D752055B499BC921F88DDC"
+				}, 
+				{
+					"CurrentState": "Expensive",
+					"NextState": "GameTypeAnswer",
+					"Meaning": "Intervene2",
+					"Style": "Finish",
+					"Utterance": "Ok, does he like Action RPG's?",
+					"UtteranceId": "TTS-2E102AB4CDED6C5EFAF27257399CCA2F"
+				}, 
+				{
+					"CurrentState": "NeedMoreInfo1",
+					"NextState": "PlatformAnswer",
+					"Meaning": "Intervene",
+					"Style": "Negative",
+					"Utterance": "Who is it for again?",
+					"UtteranceId": "TTS-3E65543B8C3AF087AC414F5A9EA60AEA"
+				}, 
+				{
+					"CurrentState": "-",
+					"NextState": "-",
+					"Meaning": "Intervene4",
+					"Style": "John",
+					"Utterance": "Daaaad, lady pleeaaase.",
+					"UtteranceId": "TTS-177E39635307B9FB1CF00EE4E4936B8D"
+				}, 
+				{
+					"CurrentState": "FoundGame1",
+					"NextState": "InterveneSuggest",
+					"Meaning": "-",
+					"Style": "Negative",
+					"Utterance": "No, he is not old enough.",
+					"UtteranceId": "TTS-579CADAE1CB7ABDD8C61BB3161F841EC"
+				}, 
+				{
+					"CurrentState": "-",
+					"NextState": "-",
+					"Meaning": "Intervene",
+					"Style": "John",
+					"Utterance": "Hey, It is for me!",
+					"UtteranceId": "TTS-A4E80C19DEC493B86FD40C811E9EC8BE"
+				}, 
+				{
+					"CurrentState": "-",
+					"NextState": "-",
+					"Meaning": "Intervene2",
+					"Style": "John",
+					"Utterance": "Lady, I want a PC Game...",
+					"UtteranceId": "TTS-68C93F172AEB74A95D301B2825A80E98"
+				}, 
+				{
+					"CurrentState": "InterveneSuggest",
+					"NextState": "GameType2",
+					"Meaning": "Intervene4",
+					"Style": "Negative",
+					"Utterance": "It does have a bit of 18 plus content...",
+					"UtteranceId": "TTS-C2B4D86CE15BEA22483D90396F6B8E6E"
+				}, 
+				{
+					"CurrentState": "InterveneSuggest",
+					"NextState": "GameType2",
+					"Meaning": "Intervene4",
+					"Style": "Finish",
+					"Utterance": "Sorry kid. What about the Divinity: Original Sin 2?",
+					"UtteranceId": "TTS-7632F2F475817EFB0E792933414E76BF"
+				}, 
+				{
+					"CurrentState": "Expensive",
+					"NextState": "GameTypeAnswer",
+					"Meaning": "Intervene2",
+					"Style": "Neutral",
+					"Utterance": "This Nintendo Switch with the new Zelda game and a controller pack seems like a good option.",
+					"UtteranceId": "TTS-F2260DE18883B099C474450E37988A10"
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "IntegratedAuthoringTool.IntegratedAuthoringToolAsset, IntegratedAuthoringTool, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

@@ -1,0 +1,58 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"AttributionRules": [
+				{
+					"RuleName": "RepulsedByFour",
+					"Target": "[x]",
+					"Value": -40,
+					"Conditions":
+						{
+							"Set": ["IsRepulsed(SELF, [x]) = True", "EventId(Action-End, [x], Speak([cs], [ns], [m], Negative), SELF) = [id]", "Count([id]) = 4"]
+						}
+				}, 
+				{
+					"RuleName": "RepulsedByThree",
+					"Target": "[x]",
+					"Value": -30,
+					"Conditions":
+						{
+							"Set": ["IsRepulsed(SELF, [x]) = True", "EventId(Action-End, [x], Speak([cs], [ns], [m], Negative), SELF) = [id]", "Count([id]) = 3"]
+						}
+				}, 
+				{
+					"RuleName": "RepulsedByTwo",
+					"Target": "[x]",
+					"Value": -20,
+					"Conditions":
+						{
+							"Set": ["IsRepulsed(SELF, [x]) = True", "EventId(Action-End, [x], Speak([cs], [ns], [m], Negative), SELF) = [id]", "Count([id]) = 2"]
+						}
+				}, 
+				{
+					"RuleName": "RepulsedByOne",
+					"Target": "[x]",
+					"Value": -10,
+					"Conditions":
+						{
+							"Set": ["IsRepulsed(SELF, [x]) = True", "EventId(Action-End, [x], Speak([cs], [ns], [m], Negative), SELF) = [id]", "Count([id]) = 1"]
+						}
+				}, 
+				{
+					"RuleName": "Customer",
+					"Target": "[x]",
+					"Value": 50,
+					"Conditions":
+						{
+							"Set": ["Customer([x], SELF) = True"]
+						}
+				}],
+			"Claims": []
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "SocialImportance.SocialImportanceAsset, SocialImportanceAsset, Version=1.5.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

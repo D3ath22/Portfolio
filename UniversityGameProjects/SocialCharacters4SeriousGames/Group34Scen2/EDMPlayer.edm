@@ -1,0 +1,40 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"DefaultActionPriority": 0,
+			"ActionTendencies": [
+				{
+					"Action": "Disconnect",
+					"Target": "-",
+					"Type": "-",
+					"Conditions":
+						{
+							"Set": ["DialogueState(Player) = End"]
+						}
+				}, 
+				{
+					"Action": "Speak([cs], [ns], Family, [s])",
+					"Target": "John",
+					"Type": "John",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], [s]) = True", "DialogueState(John) = [cs]", "Has(Floor) = SELF"]
+						}
+				}, 
+				{
+					"Action": "Speak([cs], [ns], [m], [s])",
+					"Target": "Sarah",
+					"Type": "Sarah",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], [s]) = True", "[m] != Family", "DialogueState(Sarah) = [cs]", "Has(Floor) = SELF"]
+						}
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "EmotionalDecisionMaking.EmotionalDecisionMakingAsset, EmotionalDecisionMaking, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

@@ -1,0 +1,52 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"DefaultActionPriority": 0,
+			"ActionTendencies": [
+				{
+					"Action": "Disconnect",
+					"Target": "-",
+					"Type": "-",
+					"Conditions":
+						{
+							"Set": ["DialogueState(Player) = End"]
+						}
+				}, 
+				{
+					"Action": "Speak([cs], [ns], [m], Positive)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], Positive) = True", "[m] != Family", "DialogueState([x]) = [cs]", "Mood(Self) > 0", "SI(Player) > 30", "Has(Floor) = SELF"]
+						},
+					"Priority": 3
+				}, 
+				{
+					"Action": "Speak([cs], [ns], [m], Negative)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], Negative) = True", "[m] != Family", "DialogueState([x]) = [cs]", "Mood(Self) < 0", "Has(Floor) = SELF"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Speak([cs], [ns], [m], Neutral)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], Neutral) = True", "[m] != Family", "DialogueState([x]) = [cs]", "Has(Floor) = SELF"]
+						},
+					"Priority": 1
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "EmotionalDecisionMaking.EmotionalDecisionMakingAsset, EmotionalDecisionMaking, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

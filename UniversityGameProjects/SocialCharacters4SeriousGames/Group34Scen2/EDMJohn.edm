@@ -1,0 +1,92 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"DefaultActionPriority": 0,
+			"ActionTendencies": [
+				{
+					"Action": "Disconnect",
+					"Target": "-",
+					"Type": "-",
+					"Conditions":
+						{
+							"Set": ["DialogueState(Player) = End"]
+						}
+				}, 
+				{
+					"Action": "Speak([cs], [ns], Family, Negative)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], Negative) = True", "DialogueState([x]) = [cs]", "Mood(Self) < 0", "Has(Floor) = SELF", "Player = [x]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Speak([cs], [ns], Family, Positive)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], Positive) = True", "DialogueState([x]) = [cs]", "Mood(Self) > 0", "SI(Player) > 30", "Has(Floor) = SELF", "Player = [x]"]
+						},
+					"Priority": 3
+				}, 
+				{
+					"Action": "Speak([cs], [ns], Family, Neutral)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], Neutral) = True", "DialogueState([x]) = [cs]", "Has(Floor) = SELF", "Player = [x]"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "Speak([cs], [ns], Intervene, John)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], Intervene, John) = True", "Sarah = [x]", "EventId(Action-End, Sarah, Speak([css], [nss], Intervene, [ts]), [p]) = [id]", "Count([id]) = 1"]
+						},
+					"Priority": 4
+				}, 
+				{
+					"Action": "Speak([cs], [ns], Intervene4, John)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], Intervene4, John) = True", "Sarah = [x]", "EventId(Action-End, Sarah, Speak([css], [nss], Intervene4, [ts]), [p]) = [id]", "Count([id]) = 1"]
+						},
+					"Priority": 4
+				}, 
+				{
+					"Action": "Speak([cs], [ns], Intervene3, John)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], Intervene3, John) = True", "Sarah = [x]", "EventId(Action-End, Sarah, Speak([css], [nss], Intervene3, [ts]), [p]) = [id]", "Count([id]) = 1"]
+						},
+					"Priority": 4
+				}, 
+				{
+					"Action": "Speak([cs], [ns], Intervene2, John)",
+					"Target": "[x]",
+					"Type": "[x]",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], Intervene2, John) = True", "Sarah = [x]", "EventId(Action-End, Sarah, Speak([css], [nss], Intervene2, [ts]), [p]) = [id]", "Count([id]) = 1"]
+						},
+					"Priority": 4
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "EmotionalDecisionMaking.EmotionalDecisionMakingAsset, EmotionalDecisionMaking, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}
